@@ -4,12 +4,6 @@
 #include <string>
 #include "tests.h"
 
-void print_this(const std::vector<int>& nums);
-void print_backwards(const std::vector<int>& nums);
-
-//functions below have tests implemented for them
-
-
 
 int main() {
 
