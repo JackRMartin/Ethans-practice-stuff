@@ -3,6 +3,9 @@
 std::vector<int> reverse_this(const std::vector<int>& nums);
 int find_max(const std::vector<int>& nums);
 int find_min(const std::vector<int>& nums);
+void print_this(const std::vector<int>& nums);
+void print_backwards(const std::vector<int>& nums);
+
 
 bool test_reverse(const std::vector<int>& input, const std::vector<int>& check){
 	return input == check;
@@ -26,6 +29,14 @@ void execute_tests() {
 		input3{},
 		input4{ 0 };
 
+	print_this(input1);
+	print_backwards(input1);
+	print_this(input2);
+	print_backwards(input2);
+	print_this(input3);
+	print_backwards(input3);
+	print_this(input4);
+	print_backwards(input4);
 
 	if (test_reverse(reverse_this(input1), { 5,4,3,2,1 })) {
 		std::cout << "REVERSE WORKS FOR INPUT1\n\n";
